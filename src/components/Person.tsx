@@ -8,7 +8,6 @@ export interface IPerson {
     children?: React.ReactNode;
 }
 const Person = (props: IPerson) => {
-
     const passwordHintId = useId();
     const handleChange = (event: React.FormEvent<HTMLInputElement>) => {
         console.log( (event.target as HTMLInputElement).value );
